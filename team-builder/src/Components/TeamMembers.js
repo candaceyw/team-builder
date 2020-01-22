@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import './TeamForm.css';
 
 const TeamMembers = (props) => {
     console.log(props)
@@ -8,7 +9,7 @@ const TeamMembers = (props) => {
     //   }, [])
 
     return (
-        <div className="team-list">
+        <div className="memberWrapper">
             {props.members.map(member => (
                 <div className="member" key={member.id}>
                     <h2>{member.name}</h2>

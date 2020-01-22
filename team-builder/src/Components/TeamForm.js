@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './TeamForm.css';
 
 const TeamForm = (props) => {
     const [teamMember, setTeamMember] = useState({
@@ -31,10 +32,11 @@ const TeamForm = (props) => {
     }, [])
 
     return (
-        <div>
-            <form onSubmit={submitHandler}>
+        <div className="formWrapper">
+            <form onSubmit={submitHandler} className="teamForm">
                 <label htmlFor="name">Name: </label>
                 <input 
+                className="nameInput"
                 onChange={handleChanges} 
                 id="name"
                 type="text" 
@@ -45,6 +47,7 @@ const TeamForm = (props) => {
 
                 <label htmlFor="email">Email: </label>
                 <input 
+                className="emailInput"
                 onChange={handleChanges} 
                 type="text" 
                 id="email"
@@ -55,6 +58,7 @@ const TeamForm = (props) => {
 
                 <label htmlFor="role">Role: </label>
                 <input 
+                className="roleInput"
                 onChange={handleChanges} 
                 type="text" 
                 id="role"
@@ -63,7 +67,7 @@ const TeamForm = (props) => {
                 value={teamMember.role}
                 />
 
-                <button type="submit">Submit</button>
+                <button className="submitButton" type="submit">Submit</button>
             </form>
         </div>
     )

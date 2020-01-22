@@ -1,0 +1,47 @@
+.formWrapper{
+    background-color: rgb(230, 230, 230); 
+    padding: 2%;
+    margin: 0 10%;
+}
+
+body{
+    margin: 30px;
+}
+
+.teamForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    width: 350px;
+    margin: 2%;
+    border-radius: 5px;  
+    border: none;  
+}
+
+.memberWrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    padding: 2%;
+    margin: 20px;
+    -moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+
+}
