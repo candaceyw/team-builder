@@ -7,6 +7,7 @@ const TeamMembers = (props) => {
     //     console.log(`${name} ${email} ${role}`)
         
     //   }, [])
+ 
 
     return (
         <div className="memberWrapper">
@@ -17,7 +18,7 @@ const TeamMembers = (props) => {
                     <p>{member.role}</p>
                         <div> 
                             <button>Edit</button> 
-                            <button >Delete</button>
+                            <button onClick={props.handleRemoveItem}>Delete</button>
                         </div>
                 </div>
 

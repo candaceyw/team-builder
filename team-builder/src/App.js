@@ -22,7 +22,7 @@ function App() {
     <div className="App">
      <h1>Team Members</h1>
      <TeamForm addNewMember={addNewMember}/>
-     <TeamMembers members={members}  />
+     <TeamMembers members={members} key='index' />
     </div>
   );
 }

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './TeamForm.css';
 
 const TeamForm = (props) => {
+
+
     const [teamMember, setTeamMember] = useState({
         name: '',
         email: '',
@@ -12,6 +14,13 @@ const TeamForm = (props) => {
         setTeamMember({ ...teamMember, [event.target.name]: event.target.value })
         // console.log(teamMember)
     }
+
+
+    const [deleteUser, setDeleteUser] = useState([])
+
+    const handleRemoveItem = () => {
+        // console.log(handleRemoveItem)
+       };
 
     const submitHandler = event => {
         event.preventDefault();
@@ -25,11 +34,13 @@ const TeamForm = (props) => {
         setTeamMember({ name:'', email:'', role:''})
     }
 
+
     useEffect(() => {
 
            return props.memberToEdit
 
     }, [])
+
 
     return (
         <div className="formWrapper">
