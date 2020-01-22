@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const TeamForm = (props) => {
     const [teamMember, setTeamMember] = useState({
@@ -23,6 +23,12 @@ const TeamForm = (props) => {
         
         setTeamMember({ name:'', email:'', role:''})
     }
+
+    useEffect(() => {
+
+           return props.memberToEdit
+
+    }, [])
 
     return (
         <div>

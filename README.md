@@ -28,15 +28,15 @@ In this project you'll build an app that will keep track of memebers of a team. 
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete by merging the branch back into master.
+- [x] Do your magic!
 
 ## Minimum Viable Product
 
-- [ ] Render a list of team members from state
-- [ ] Build a form to add a new member to the list of members
+- [x] Render a list of team members from state
+- [x] Build a form to add a new member to the list of members
 
 ### STEP 1 - Setup your state
 
@@ -60,7 +60,7 @@ Now you are finished with MVP! Move on to the stretch goals at the bottom. The f
 Next we're going to reuse the `Form` component to edit team members
 
 **Get App.js ready for editing members**
-- [ ] Add an edit button, or an edit icon next to each member you are rendering. When the button/icon is clicked, we want to set that member to a state property in `App` called `memberToEdit`. The function to do this should live in `App`, even if the button/icon invoking it are in a different component. Just pass the function down as a prop.
+- [ ] Add an edit button, or an edit icon next to each member you are rendering. When the button/icon is clicked, we want to set that member to a state property in `App` called `memberToEdit`. The function to do this should live in `App`, even if the button/icon invoking it are in a different component. Just pass the function down as a prop. 
 
 **Get Form.js ready to edit members**
 - [ ] Pass `memberToEdit` down to `Form.js`

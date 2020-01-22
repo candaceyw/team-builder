@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TeamForm from './Components/TeamForm';
 import TeamMembers from './Components/TeamMembers';
 import './App.css';
@@ -15,11 +15,14 @@ function App() {
   const addNewMember = member => {
     const newMember = setMember([...members, member])
   }
+
+  const [memberToEdit, setMemberToEdit ] = useState([])
+
   return (
     <div className="App">
      <h1>Team Members</h1>
      <TeamForm addNewMember={addNewMember}/>
-     <TeamMembers members={members}/>
+     <TeamMembers members={members}  />
     </div>
   );
 }
