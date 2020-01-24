@@ -1,6 +1,6 @@
 body {
     background-image: url("../images/particles.jpg");
-    margin: 30px;
+    margin: 50px;
 
 }
 
@@ -9,9 +9,11 @@ h1 {
 }
 
 .formWrapper{
-    background-color: rgb(230, 230, 230); 
+    background-color: rgb(230, 230, 230, 0.8); 
     padding: 2%;
-    margin: 0 10%;
+    margin: auto auto;
+    border-radius: 10px;
+    width: 40%;
 }
 
 
@@ -37,6 +39,7 @@ input {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .member {
@@ -45,6 +48,8 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
+    border-radius: 10px;
+
 
     width: 30%;
     padding: 2%;
@@ -53,4 +58,30 @@ input {
 -webkit-box-shadow: 0 0 5px#888;
 box-shadow: 0 0 5px #888;
 
+}
+
+::-webkit-input-placeholder { 
+    font-size: medium;
+    padding: 10px;
+}
+
+button {
+    margin: 2%;
+    width: 80px;
+    height: 30px;
+    background: rgb(144, 238, 249);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+    background: #a50c7a;
+    color: white;
+}
+
+
+
+button:active {
+    transform: scale(0.99);
 }
