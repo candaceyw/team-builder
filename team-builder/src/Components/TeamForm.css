@@ -1,0 +1,87 @@
+body {
+    background-image: url("../images/particles.jpg");
+    margin: 50px;
+
+}
+
+h1 {
+    color: white;
+}
+
+.formWrapper{
+    background-color: rgb(230, 230, 230, 0.8); 
+    padding: 2%;
+    margin: auto auto;
+    border-radius: 10px;
+    width: 40%;
+}
+
+
+.teamForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    width: 350px;
+    margin: 2%;
+    border-radius: 5px;  
+    border: none;  
+}
+
+.memberWrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+
+
+    width: 30%;
+    padding: 2%;
+    margin: 20px;
+    -moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+
+}
+
+::-webkit-input-placeholder { 
+    font-size: medium;
+    padding: 10px;
+}
+
+button {
+    margin: 2%;
+    width: 80px;
+    height: 30px;
+    background: rgb(144, 238, 249);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+    background: #a50c7a;
+    color: white;
+}
+
+
+
+button:active {
+    transform: scale(0.99);
+}
